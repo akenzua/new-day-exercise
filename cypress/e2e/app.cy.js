@@ -6,7 +6,7 @@ describe('App', () => {
   });
   it('test accessibility', () => {
     // find and click open modal button
-    cy.get('button').contains('open modal').click();
+    cy.get('button').contains('Open Modal').click();
 
     // find the modal and assert it is open
     cy.findByRole('dialog')
@@ -30,6 +30,6 @@ describe('App', () => {
 
     // cy.wait(500);
 
-    cy.get('button').contains('open modal').should('have.focus');
+    cy.get('button').contains('Open Modal').should('have.focus');
   });
 });
